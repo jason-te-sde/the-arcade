@@ -101,9 +101,16 @@ a:focus-visible {
 }
 
 .site-title::before {
-    content: "▶";
+    content: "▶" / "";
     color: var(--color-accent);
     margin-right: var(--space-2);
+}
+
+main a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-min);
+    min-width: var(--tap-min);
 }
 
 main {
