@@ -100,6 +100,12 @@ a:focus-visible {
     min-height: var(--tap-min);
 }
 
+.site-title::before {
+    content: "▶";
+    color: var(--color-accent);
+    margin-right: var(--space-2);
+}
+
 main {
     max-width: var(--max-width-page);
     margin: 0 auto;
