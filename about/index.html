@@ -27,7 +27,94 @@
         </nav>
     </header>
     <main>
-        <h1>About</h1>
+        <h1>About Me</h1>
+        <p>
+            I'm Jason Te, a Master's student in Computer Science at Northeastern University in Seattle.
+            I build backend and distributed systems that stay correct under pressure, and I test them
+            as carefully as I write them.
+        </p>
+
+        <section>
+            <h2>Experience</h2>
+            <article>
+                <h3>Software Engineer Intern · Onye Inc.</h3>
+                <p>Jun. 2026 - Aug. 2026 · Brooklyn, NY</p>
+                <ul>
+                    <li>Built a HIPAA-oriented radiology platform serving 4 user roles across 65 pages and 81 API routes.</li>
+                    <li>Built a SHA-256 integrity layer over resumable uploads, catching corrupt multi-gigabyte imaging studies.</li>
+                    <li>Hardened doctor-facing patient data routes with an MFA session guard.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Teaching Assistant · Northeastern University</h3>
+                <p>Jan. 2026 - May 2026 · CS 5010 Programming Design Paradigm</p>
+            </article>
+            <article>
+                <h3>Student Researcher · Tan Kah Kee Innovation Laboratory</h3>
+                <p>Sep. 2023 - Jun. 2025 · Xiamen, China</p>
+                <ul>
+                    <li>Boosted analysis efficiency by 50% with a multi-variate signal visualization platform.</li>
+                    <li>Improved valid-signal extraction by 30% using a Transformer classifier.</li>
+                    <li>Co-authored a paper on low-probability event detection, published in Nano Research (2025).</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Software Engineer · Alibaba Group (Freshippo)</h3>
+                <p>Sep. 2019 - Jan. 2020 · Shanghai, China</p>
+                <ul>
+                    <li>Reduced daily reconciliation time by 80% by automating sales, returns, and loss aggregation.</li>
+                    <li>Cut online out-of-stock rates by 25% with an automated restocking alert system.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <article>
+                <h3><a href="https://github.com/jason-te-sde/keel">keel</a> · Distributed Key-Value Store</h3>
+                <p>Java 21 · Raft · gRPC · RocksDB · Docker</p>
+                <ul>
+                    <li>Implemented the Raft consensus algorithm from scratch: leader election, log replication, and snapshots.</li>
+                    <li>Increased durable write throughput 60× by batching fsyncs in a custom write-ahead log.</li>
+                    <li>Built a fault-injection simulator and linearizability checker running 12M+ checks in 81 seconds.</li>
+                </ul>
+            </article>
+            <article>
+                <h3><a href="https://github.com/jason-te-sde/till">till</a> · Oversell-Proof E-Commerce Platform</h3>
+                <p>Java 21 · Spring Boot · React · PostgreSQL · Kafka · Redis</p>
+                <ul>
+                    <li>Guaranteed zero overselling: exactly 20 of 20 units sold to 200 concurrent buyers.</li>
+                    <li>Shipped a React/TypeScript storefront with search, cart, and timed checkout on a Spring Boot backend.</li>
+                    <li>Achieved 88% test coverage across 500+ Java and React tests, including end-to-end browser checkout.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <article>
+                <h3>M.S. in Computer Science · Northeastern University</h3>
+                <p>Sep. 2025 - May 2027 · Seattle, WA · GPA 4.0</p>
+            </article>
+            <article>
+                <h3>M.S. in Artificial Intelligence · Xiamen University</h3>
+                <p>Sep. 2022 - Jun. 2025 · China</p>
+            </article>
+            <article>
+                <h3>B.S. in Software Engineering · Xi'an University of Posts &amp; Telecommunications</h3>
+                <p>Sep. 2015 - Jun. 2019 · China</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Languages: Java, Python, JavaScript/TypeScript, C/C++, SQL, HTML/CSS</li>
+                <li>Frameworks: Spring Boot, React, Node.js, Express, PyTorch</li>
+                <li>Data &amp; Messaging: PostgreSQL, MySQL, Redis, MongoDB, Kafka, RabbitMQ</li>
+                <li>Cloud &amp; DevOps: Docker, Kubernetes, AWS, GitHub Actions</li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>

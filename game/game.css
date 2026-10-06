@@ -1,0 +1,78 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, var(--cell-size));
+    gap: 2px;
+    background-color: var(--color-text);
+    border: 2px solid var(--color-text);
+    width: fit-content;
+}
+
+.cell {
+    position: relative;
+    height: var(--cell-size);
+    background-color: var(--color-bg);
+}
+
+.cell-block {
+    background-color: var(--color-text);
+}
+
+.cell input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    text-align: center;
+    font-family: inherit;
+    font-size: var(--font-size-lg);
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+.cell-number {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    pointer-events: none;
+}
+
+.cell input:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: -3px;
+    background-color: var(--color-surface);
+}
+
+.solution {
+    display: none;
+}
+
+.solution-area:has(.reveal-toggle:checked) .solution {
+    display: block;
+}
+
+.puzzle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    align-items: flex-start;
+}
+
+.reveal-label {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: var(--tap-min);
+    padding: 0 var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background-color: var(--color-surface);
+    cursor: pointer;
+}
+
+.reveal-toggle:focus-visible {
+    outline: 3px solid var(--color-accent-dark);
+    outline-offset: 2px;
+}
